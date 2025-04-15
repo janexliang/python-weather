@@ -49,7 +49,7 @@ def get_weather(city="Ottawa"):
     )
 
 if __name__ == "__main__":
-    serve(app, host="localhost", port=8009) ## use module from waitress to avoid security WARN
+    serve(app, host="0.0.0.0", port=8080) ## use module from waitress to avoid security WARN
 
     #app.run(host="0.0.0.0", port=8009)  ## run app on local with port 8009
 
